@@ -635,7 +635,7 @@
 	// document.getElementById("demo1").innerHTML = window.location.search.substring(2);
 	var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
+        sURLVariables = sPageURL.split('+'),
         sParameterName,
         i;
 
@@ -647,7 +647,7 @@
 			}
 		}
 	};
-	document.getElementById("demo").innerHTML = getUrlParameter('nama1') + ' ' + getUrlParameter('nama2')  + ' ' + getUrlParameter('dan') + ' ' + getUrlParameter('pasangan'); 
+		document.getElementById("demo").innerHTML = getUrlParameter('nama1') + ' ' + getUrlParameter('nama2')  + ' ' + getUrlParameter('dan') + ' ' + getUrlParameter('pasangan'); 
 	// document.getElementById("demo1").innerHTML = getUrlParameter('blog');
 	</script>
 
