@@ -116,6 +116,8 @@
 							<h1>Ardi &amp; Desti</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
+							<h2>Also invite</h2>
+							<!-- <h1><?=get_link;?></h1> -->
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
@@ -609,7 +611,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    var d = new Date(new Date().getTime() + 22 * 120 * 120 * 2000);
 
     // default example
     simplyCountdown('.simply-countdown-one', {
