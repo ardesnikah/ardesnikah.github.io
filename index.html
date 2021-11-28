@@ -609,8 +609,26 @@
 	</div>
 
 	<div class="gototop js-top">
+		<!-- <audio controls autoplay>
+			<source src="music/Hari_bahagia.mp3"  type="audio/mpeg">
+		</audio> -->
+		<audio id="audioNotifikasi">
+			<source src="music/Hari_bahagia.mp3" type="audio/mpeg">
+		  </audio>
+		  <p>Klik tombol di bawah ini untuk memutar atau pause audio.</p>
+		  <button onclick="playAudio()" type="button">Play Audio</button>
+		  <button onclick="pauseAudio()" type="button">Pause Audio</button>
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+	<script type="text/javascript">
+		var el = document.getElementById("audioNotifikasi"); 
+		function playAudio() { 
+		  el.play(); 
+		} 
+		function pauseAudio() { 
+		  el.pause(); 
+		} 
+		</script>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
