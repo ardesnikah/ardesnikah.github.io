@@ -120,7 +120,7 @@
 							text-align:center;
 							border-radius: 25px;
 							border: 2px solid #fed136;">
-					Turut Menundang :<br> <p>Fulan bin fulan</p>
+					Turut Menundang :<br> <p id="demo"></p>
 					</div>
 				</center>
             </div>
@@ -372,6 +372,23 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('+'),
+            sParameterName,
+            i;
+    
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+    
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+            document.getElementById("demo").innerHTML = getUrlParameter('nama1') + ' ' + getUrlParameter('nama2')  + ' ' + getUrlParameter('dan') + ' ' + getUrlParameter('pasangan'); 
+    </script>
 
 </body>
 
