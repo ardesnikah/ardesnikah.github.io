@@ -377,6 +377,21 @@
         						<h4 id="nama" class="text-center">Desti</h4>
         					</div><br><br>
                 </div>
+                <center>
+					<div class="text-center"
+					style="margin-top: 10px;
+                            padding-bottom: 20px;
+							width: 250px;
+                            color:#0c0c0c;
+							height: 50px;
+                            border-bottom-width: 100px;
+                            font-size: 10px;
+							text-align:center;
+							border-radius: 12px;
+							border: 2px solid #fed136;">
+					<b> Turut Mengundang :<br> <p style="font-size:18px;" id="demo11" class="demo"></p></b>
+					</div>
+				</center><br><br>
                 <div class="container">
                     <div class="col-sm-12 text-center">
                         <a onClick="togglePlay()" ><button class="btn btn-primary text-center" type="button"> Buka Undangan</button></a>
@@ -428,6 +443,7 @@
             }
         };
             document.getElementById("demo").innerHTML = getUrlParameter('nama1') + ' ' + getUrlParameter('nama2')  + ' ' + getUrlParameter('dan') + ' ' + getUrlParameter('pasangan'); 
+            document.getElementById("demo11").innerHTML = getUrlParameter('nama1') + ' ' + getUrlParameter('nama2')  + ' ' + getUrlParameter('dan') + ' ' + getUrlParameter('pasangan'); 
     </script>
 
 </body>
