@@ -10,7 +10,6 @@
     <meta name="author" content="">
 
     <title>Ardi Desti</title>
-
     <link rel="icon" href="img/logos/logo_AD.png">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +34,7 @@
 </head>
 
 <body id="page-top" class="index">
+    <div id="HalUt" style="display:none;">
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -354,10 +354,46 @@
             <div class="row">
                 <div class="col-md-12">
                     <span class="copyright">Copyright &copy; Ardi-Desti 2021</span>
+                    <audio id="Audio" src="music/music.mp3"></audio>
                 </div>
             </div>
         </div>
     </footer>
+    </div> <!--Tutup HalUt-->
+    <!-- url('../img/header-bg.jpg') -->
+    <div class="container terakhir" id="HalAwal" style="background-image: url('img/gallery/3.jpg'); height: 800px; width:600px;">
+        <div id="nama" class="text-center"><b>Undangan Pernikahan</b></div>
+        <!-- <div class="intro-lead-in">Undangan Pernikahan</div> -->
+                <div id="nama" class="text-center">04-12-2021</div>
+                <div class="col-sm-12 text-center" >
+        					<div class="col-md-5  ikhwan">
+        						<h4 id="nama" class="text-center">Ardi</h4>
+        						
+        					</div>
+        					<div class="col-md-1">
+        						<h1 id="nama" class="text-center">&</h1>
+        					</div>
+        					<div class="col-md-5 akhwat">
+        						<h4 id="nama" class="text-center">Desti</h4>
+        					</div><br><br>
+                </div>
+                <div class="container">
+                    <div class="col-sm-12 text-center">
+                        <a onClick="togglePlay()" ><button class="btn btn-primary text-center" type="button"> Buka Undangan</button></a>
+                    </div>
+                </div>
+    </div>
+    <script type="text/javascript">
+        var myAudio = document.getElementById("Audio");
+        var isPlaying = true;
+        function togglePlay() {
+            myAudio.play();
+            // terakhir.classList.add('hide');
+            $("#HalAwal").hide("slow");      
+	        $("#HalUt").show("slow");
+        };
+
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
